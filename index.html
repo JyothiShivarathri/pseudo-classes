@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            text-align: center;
+            margin-top: 10px;
+        }
+        .b1{
+            border:2px solid black;
+            height:500px;
+            width:400px;
+            margin-top:15px;
+            margin-left:400px;
+        }
+        #m1:checked~.b1{
+             background-image: url("guntur\ karam.jpg");
+             background-size:cover;
+        }
+        #m2:checked~.b1{
+            background-image: url("Hanu_Man_film_Release_poster.jpeg");
+            background-size: cover;
+            background-position:center;
+        }
+        #m3:checked~.b1{
+            background-image: url("saindhav.jpg");
+            background-size: cover;
+        }
+        #m4:checked~.b1{
+            background-image:url("./na\ samiranga.jpg");
+            background-size: cover;
+        }
+        #m5:checked~.b1{
+            background-image: url("eagle.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    <h1>Pongal Releases</h1>
+    <input type="checkbox"  id="m1" name="movie" value="guntur karam">
+    <label for="m1">Guntur Kaaram</label>
+    <input type="checkbox"  id="m2" name="movie" value="Hanuman">
+    <label for="m2">Hanuman</label>
+    <input type="checkbox"  id="m3" name="movie" value="Saindhav">
+    <label for="m3">Saindhav</label>
+    <input type="checkbox"  id="m4" name="movie" value="Na Samiranga">
+    <label for="m4">Na Samiranga</label>
+    <input type="checkbox"  id="m5" name="movie" value="Eagle">
+    <label for="m5">Eagle</label>
+    <div class="b1"></div>
+</div>
+</body>
+</html>
